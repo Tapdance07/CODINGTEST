@@ -1,0 +1,10 @@
+N = int(input())
+X = list()
+Y = list()
+for i in range(N):
+    A,B= map(int,input().split())
+    X.append(A)
+    Y.append(B)
+C=max(X)-min(X)
+D=max(Y)-min(Y)
+print(C*D)

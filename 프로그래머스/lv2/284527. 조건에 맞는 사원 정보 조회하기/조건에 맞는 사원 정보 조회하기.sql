@@ -1,0 +1,6 @@
+select sum(SCORE) SCORE, HG.EMP_NO, EMP_NAME, POSITION, EMAIL
+from HR_EMPLOYEES HE left join HR_GRADE HG ON HE.EMP_NO = HG.EMP_NO
+
+group by HG.EMP_NO,HE.EMP_NO
+order by SCORE desc
+limit 1
